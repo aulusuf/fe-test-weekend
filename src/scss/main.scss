@@ -1,0 +1,428 @@
+$xs: 375px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$text-width: 619px;
+body {
+  font-family: "Work Sans", sans-serif !important;
+  background-color: #eebece !important;
+}
+.setting {
+  margin: 0 auto;
+  justify-content: center;
+  .svg-container {
+    width: 100%;
+    background-position: top;
+  }
+}
+
+.container-custom {
+  @media (max-width: $md) {
+    padding: 0 24px !important;
+  }
+  @media (min-width: $md) {
+    padding: 0 60px !important;
+  }
+  @media (min-width: $lg) {
+    padding: 0 100px !important;
+  }
+  @media (min-width: $xl) {
+    padding: 0 213px !important;
+  }
+}
+.header {
+  background-color: #ffff;
+  position: absolute;
+  .setting {
+    padding: 17px 0 0 0;
+    @media (min-width: 1366px) {
+      width: 1366px;
+    }
+  }
+}
+.profile-pict {
+  height: 33px;
+  width: inherit;
+}
+.greeting {
+  margin-left: 15px;
+  p {
+    font-size: 12px;
+    line-height: 14.06px;
+    span {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18.75px;
+    }
+  }
+}
+
+.landing {
+  height: 1110px;
+  margin: 0 auto;
+
+  .setting {
+    background-image: url(../assets/Path.svg), url(../assets/Oval-landing.svg),
+      url(../assets/Path%202.svg), url(../assets/Path%203.svg);
+    background-repeat: no-repeat;
+  }
+}
+.svg-container {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  .blue-wave {
+    align-items: center;
+    overflow: hidden;
+    z-index: -2;
+    margin-left: -80px;
+    z-index: 0;
+  }
+  .black-wave {
+    align-items: center;
+    z-index: -3;
+    width: 100%;
+  }
+}
+
+.landing-content {
+  min-height: 1248px;
+  padding-top: 133px;
+  @media (min-width: $md) {
+    padding-top: 150px;
+  }
+  color: white;
+  h1 {
+    @media (max-width: $md) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    text-align: center;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: black;
+    line-height: 51px;
+  }
+  p {
+    text-align: center;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 600;
+    @media screen and (max-width: $xs) {
+      font-size: 16px;
+    }
+  }
+}
+
+.lego {
+  margin-top: 67px;
+  .image {
+    z-index: -1;
+    width: 184px;
+    height: 305px;
+  }
+}
+.definition {
+  background-image: url(../assets/lego-2.svg), url(../assets/Path%204.svg);
+  background-repeat: no-repeat;
+
+  @media (max-width: $sm) {
+    background-position: top 98.5px right 0px, top 67px right;
+  }
+  @media (min-width: $sm) {
+    background-position: top 230px right 0px, top 198px right;
+  }
+}
+.clickme {
+  margin: -105px auto 0px auto;
+  button {
+    padding: 20px 80px;
+    font-size: 16px;
+    line-height: 18.75px;
+    border-radius: 29px;
+    box-shadow: 0px 20px 30px rgba(249, 131, 171, 0.5);
+  }
+}
+
+.definition-content {
+  @media (max-width: $sm) {
+    padding-top: 288px;
+  }
+  padding-top: 348px;
+  line-height: 24px;
+  letter-spacing: -0.57px;
+  color: black;
+  p {
+    @media screen and (min-width: $xs) {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+    @media screen and (min-width: $sm) {
+      font-size: 17px;
+    }
+    @media screen and (min-width: $md) {
+      font-size: 21px;
+      margin: 0 auto;
+      width: 619px;
+      padding-bottom: 30px;
+    }
+    font-style: normal;
+    text-align: right;
+    font-weight: 500;
+    span {
+      color: blue;
+      font-weight: 700;
+    }
+  }
+  .caption-by {
+    color: white;
+    text-align: right;
+    font-style: italic;
+  }
+}
+
+.testimonial-wrapper {
+  @media (min-width: $md) {
+    width: 621px;
+    margin: 0 auto;
+  }
+}
+
+.testimonial {
+  @media (max-width: $md) {
+    background-position: top 38px left 57px !important;
+  }
+  @media (min-width: 1366px) {
+    width: 1366px;
+  }
+  margin: 0 auto;
+  background-image: url(../assets/Oval-blue.svg);
+  background-repeat: no-repeat;
+  // position: relative;
+  // margin-top: -150px;
+  .testimonial-content {
+    padding-top: 84px;
+    @media (max-width: $md) {
+      padding-top: 107px;
+    }
+    h2 {
+      font-style: black;
+      font-weight: 900;
+      color: white;
+      font-size: 32px;
+      text-shadow: 0px 20px 30px rgba(249, 131, 171, 0.7);
+      @media (min-width: $md) {
+        padding-left: 0px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.testimonial-slider {
+  margin-top: 5px;
+  padding: 25px 25px 29px 25px;
+}
+
+.testimony {
+  background-color: white;
+  width: 247px;
+  height: 139.734px;
+  overflow: hidden;
+  padding: 20px;
+  h4 {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.43px;
+    line-height: 14.08px;
+    margin: 0;
+  }
+}
+
+h3 {
+  font-size: 32px !important;
+  font-weight: 900 !important;
+  margin-bottom: 30px !important;
+  @media (min-width: $md) {
+    text-align: center;
+  }
+}
+.details {
+  margin-top: -125px;
+  background-color: black;
+  color: white;
+  padding-bottom: 23px;
+  .detail-content {
+    padding: 162px 32px 0 32px;
+    @media (min-width: $md) {
+      text-align: center;
+      p {
+        width: $text-width;
+        margin-top: 0;
+        margin-bottom: 67px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.57px;
+    margin-bottom: 67px;
+  }
+}
+
+.helpntips {
+  background-color: black;
+  color: white;
+  background-image: url(../assets/Path%203-hnt.svg);
+  background-repeat: no-repeat;
+  @media (max-width: $md) {
+    h3 {
+      padding: 0 32px;
+    }
+  }
+}
+.item-display {
+  display: flex;
+  justify-content: center;
+  @media (max-width: $lg) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.item {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: auto;
+  width: 311px;
+  height: 176px;
+}
+.item-desc {
+  height: 70px;
+  margin-top: -70px;
+  padding: 17px 20px 17px 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+h5 {
+  font-size: 16px;
+  line-height: 18.75px;
+  width: 218px;
+  letter-spacing: -0.57px;
+  font-weight: 600;
+}
+
+.done {
+  padding-top: 57px;
+  font-size: 16px;
+  text-align: left;
+  background-color: black;
+  @media (min-width: $md) {
+    padding-left: 0;
+    padding-top: 127px;
+    text-align: center;
+    line-height: 37.5px;
+  }
+  p {
+    @media (min-width: $md) {
+      width: 619px;
+      font-size: 18px;
+      margin: auto;
+      line-height: 24px;
+      letter-spacing: -0.64px;
+    }
+  }
+  .setting {
+    .container-custom {
+      background-image: url(../assets/footer/lego-180.svg),
+        url(../assets/footer/lego-bg.svg);
+      background-repeat: no-repeat;
+      height: 544px;
+
+      background-position: left 31px bottom 101px, bottom left;
+      @media (min-width: $lg) {
+        height: 325px;
+        background-position: left 31px top, bottom left;
+      }
+    }
+  }
+  color: white;
+}
+
+.footer {
+  background-color: #0b24fb;
+  color: white;
+  height: 67px;
+  font-size: 12px;
+  .container-custom {
+    height: 67px;
+    @media (max-width: $md) {
+      padding: 0 32px !important;
+    }
+    @media (min-width: 1366px) {
+      width: 1366px;
+    }
+  }
+  p {
+    padding-top: 24px;
+    line-height: 14.08px;
+    font-weight: 400px;
+    span {
+      font-weight: 700;
+    }
+  }
+  .version {
+    font-size: 10px;
+    border: 1px solid white;
+    padding: 3px 9px !important;
+    margin-top: 21px;
+    line-height: 11.72px;
+  }
+}
+
+.slick-prev:before {
+  display: none !important;
+  color: red !important;
+  font-size: 24px !important;
+}
+
+.slick-next:before {
+  content: ">";
+  display: none !important;
+  color: red;
+  font-size: 30px;
+}
+.slick-disabled {
+  opacity: 0.5 !important;
+}
+.arrow-left {
+  @media (max-width: $md) {
+    display: none !important;
+  }
+  transform: rotate(180deg) !important;
+}
+.arrow-right {
+  @media (max-width: $md) {
+    display: none !important;
+  }
+}
+.hide-display {
+  display: none !important;
+}
+
+.slick-next {
+  @media (max-width: $md) {
+    display: none !important;
+  }
+}
