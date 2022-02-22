@@ -214,18 +214,12 @@ body {
 }
 
 .testimonial {
-  margin: 0 auto;
   background-image: url(../assets/Oval-blue.svg);
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
   .testimonial {
     background-position: top 38px left 57px !important;
-  }
-}
-@media (min-width: 1366px) {
-  .testimonial {
-    width: 1366px;
   }
 }
 .testimonial .testimonial-content {
